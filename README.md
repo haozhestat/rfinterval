@@ -16,7 +16,6 @@ devtools::install_github(repo="haozhestat/rfinterval")
 
 ### Usage
 Quickstart:
-
 ```{r}
 train_data <- sim_data(n = 1000, p = 10)
 test_data <- sim_data(n = 1000, p = 10)
@@ -36,7 +35,6 @@ mean(output$quantreg_interval$lo < test_data$y & output$quantreg_interval$up > t
 ``` 
 
 Data example:
-
 ```{r}
 oob_interval <- rfinterval(pm2.5 ~ .,
                             train_data = BeijingPM25[1:1000, ],
@@ -46,3 +44,12 @@ oob_interval <- rfinterval(pm2.5 ~ .,
                             alpha = 0.1)
 str(oob_interval)
 ```
+
+If you find any bugs, or if you experience any crashes, please report to us. If you have any questions just ask, we won't bite. 
+
+Please cite our paper if you use *rfinterval*.
+
+### References
+* Zhang, H., Zimmerman, J., Nettleton, D. and Nordman, D. (2019+). "Random Forest Prediction Intervals." Tentatively Accepted by The American Statistician.
+* Lei, J., Max G’Sell, A. R., Tibshirani, R.J., and Wasserman, L. "Distribution-free predictive inference for regression." Journal of the American Statistical Association 113, no. 523 (2018): 1094-1111.
+* Meinshausen, N. "Quantile regression forests." Journal of Machine Learning Research 7, no. Jun (2006): 983-999.
