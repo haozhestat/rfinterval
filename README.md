@@ -1,8 +1,8 @@
-# *[rfinterval]: Predictive Inference for Random Forests
+## *rfinterval*: Predictive Inference for Random Forests
 
 ### Installation
 
-To install the rfinterval R package directly from github, run the
+To install the *rfinterval* R package directly from github, run the
 following in R:
 
 ```{r}
