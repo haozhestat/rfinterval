@@ -1,4 +1,4 @@
-# rfinterval
+# *[rfinterval]: Predictive Inference for Random Forests
 
 ### Installation
 
