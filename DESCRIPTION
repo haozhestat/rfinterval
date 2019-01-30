@@ -1,0 +1,22 @@
+Package: rfinterval
+Type: Package
+Title: Predictive Inference for Random Forests (Beta)
+Version: 0.1.0
+Date: 2019-01-29
+Author: Haozhe Zhang [aut, cre], Dan Nettleton [aut]
+Maintainer: Haozhe Zhang <haozhe.stat@gmail.com>
+Description: An integrated package for constructing random forest prediction intervals using a fast implementation pacakge 'ranger'. This package can apply the following three methods: the out-of-bag prediction interval introduced in Zhang et al. (2019), the split conformal method described in Lei et al. (2018), as well as quantile regression forest
+License: GPL-3
+Imports:
+  ranger,
+  MASS
+Depends:
+  R (>= 3.1)
+URL: http://github.com/haozhestat/rfinterval
+BugReports: http://github.com/haozhestat/rfinterval/issues
+Suggests:
+    testthat
+LazyData: true
+Encoding: UTF-8
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
