@@ -11,6 +11,7 @@ To install the R package *rfinterval* directly from github, run the following in
 ```{r}
 install.packages("devtools")
 devtools::install_github(repo="haozhestat/rfinterval")
+library(rfinterval)
 ?rfinterval
 ```  
 
