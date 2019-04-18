@@ -1,6 +1,8 @@
 ## rfinterval: Predictive Inference on Random Forests (beta)
 Haozhe Zhang
 
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)]
+
 ### Introduction
 *rfinterval* is a fast implementation of random forest prediction intervals described in the paper "*Random Forest Prediction Intervals*" by Haozhe Zhang, Joshua Zimmerman, Dan Nettleton, and Daniel J. Nordman. This R package produce out-of-bag prediction intervals, split conformal prediction intervals, and quantile regression forest intervals for random forest predictions.
 
