@@ -55,7 +55,8 @@ If you find any bugs, or if you experience any crashes, please report to us. If 
 Please cite our paper if you use *rfinterval*.
 
 ### References
-* Zhang, H., Zimmerman, J., Nettleton, D. and Nordman, D. (2019+). "Random Forest Prediction Intervals." The American Statistician, doi: 10.1080/00031305.2019.1585288.
+* Zhang, H., Zimmerman, J., Nettleton, D. and Nordman, D. (2019). "Random Forest Prediction Intervals." The American Statistician, doi: 10.1080/00031305.2019.1585288.
+* Zhang, H. (2019) "Topics in Functional Data Analysis and Machine Learning Predictive Inference." Graduate Theses and Dissertations.
 * Lei, J., Max G’Sell, A. R., Tibshirani, R.J., and Wasserman, L. "Distribution-free predictive inference for regression." Journal of the American Statistical Association 113, no. 523 (2018): 1094-1111.
 * Meinshausen, N. "Quantile regression forests." Journal of Machine Learning Research 7, no. Jun (2006): 983-999.
 * Liang, X., Zou, T., Guo, B., Li, S., Zhang, H., Zhang, S., Huang, H. and Chen, S.X., 2015. "Assessing Beijing's PM2. 5 pollution: severity, weather impact, APEC and winter heating". Proc. R. Soc. A, 471(2182), p.20150257.
