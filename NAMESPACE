@@ -1,1 +1,2 @@
 exportPattern("^[[:alpha:]]+")
+importFrom("stats", "as.formula", "predict", "quantile", "rnorm", "rt", "terms")

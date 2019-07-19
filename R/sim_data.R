@@ -10,8 +10,10 @@
 #' @param error_dist Distribution of error: "homoscedastic", "heteroscedastic", and "heavy-tailed"
 #' @return a data.frame of simulated data
 #' @examples
-#' train_data <- sim_data(n = 1000, p = 10)
-#' test_data <- sim_data(n = 1000, p = 10)
+#' \donttest{
+#' train_data <- sim_data(n = 500, p = 10)
+#' test_data <- sim_data(n = 500, p = 10)
+#' }
 #' @export
 
 
@@ -25,14 +27,14 @@ sim_data <- function(n = 500,
   if (predictor_dist == "uncorrelated") {
     x <- matrix(rnorm(n*p, 0, 1), n, p)
   } else if (predictor_dist == "correlated") {
-    library(MASS)
+    #library(MASS)
     Sigma <- diag(rep(1,p))
     for(i in 1:p){
       for(j in i:p){
         Sigma[i,j] <- Sigma[j,i] <- rho^(abs(i-j))
       }
     }
-    x <- mvrnorm(n, mu = rep(0,p), Sigma = Sigma)
+    x <- MASS::mvrnorm(n, mu = rep(0,p), Sigma = Sigma)
   }
   x <- data.frame(x)
   colnames(x) <- paste0("X", 1:p)

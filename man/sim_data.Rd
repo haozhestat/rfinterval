@@ -28,6 +28,8 @@ a data.frame of simulated data
 Simulate data for illustrate the performance of prediction intervals for random forests
 }
 \examples{
-train_data <- sim_data(n = 1000, p = 10)
-test_data <- sim_data(n = 1000, p = 10)
+\donttest{
+train_data <- sim_data(n = 500, p = 10)
+test_data <- sim_data(n = 500, p = 10)
+}
 }

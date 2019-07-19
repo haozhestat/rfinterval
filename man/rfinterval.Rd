@@ -38,8 +38,9 @@ rfinterval(formula = NULL, train_data = NULL, test_data = NULL,
 The \code{rfinterval} constructs prediction intervals for random forest predictions using a fast implementation package 'ranger'.
 }
 \examples{
-train_data <- sim_data(n = 1000, p = 10)
-test_data <- sim_data(n = 1000, p = 10)
+\donttest{
+train_data <- sim_data(n = 500, p = 8)
+test_data <- sim_data(n = 500, p = 8)
 output <- rfinterval(y~., train_data = train_data, test_data = test_data,
                      method = c("oob", "split-conformal", "quantreg"),
                      symmetry = TRUE,alpha = 0.1)
@@ -48,12 +49,15 @@ mean(output$oob_interval$lo < y & output$oob_interval$up > y)
 mean(output$sc_interval$lo < y & output$sc_interval$up > y)
 mean(output$quantreg_interval$lo < y & output$quantreg_interval$up > y)
 }
+}
 \references{
-Haozhe Zhang, Joshua Zimmerman, Dan Nettleton, and Dan Nordman. (2019+). "Random Forest Prediction Intervals." Tentatively Accepted by The American Statistician.
+Haozhe Zhang, Joshua Zimmerman, Dan Nettleton, and Dan Nordman. (2019). "Random Forest Prediction Intervals." The American Statistician. Doi: 10.1080/00031305.2019.1585288.
+
+Haozhe Zhang. (2019). "Topics in Functional Data Analysis and Machine Learning Predictive Inference." Ph.D. Dissertations. Iowa State University Digital Repository. 17929.
 
 Lei, J., Max G’Sell, Alessandro Rinaldo, Ryan J. Tibshirani, and Larry Wasserman. "Distribution-free predictive inference for regression." Journal of the American Statistical Association 113, no. 523 (2018): 1094-1111.
 
-Meinshausen, Nicolai. "Quantile regression forests." The Journal of Machine Learning Research 7 (2006): 983-999.
+Meinshausen, Nicolai. "Quantile regression forests." Journal of Machine Learning Research 7 (2006): 983-999.
 
 Leo Breiman. (2001). Random Forests. Machine Learning 45(1), 5-32.
 }
